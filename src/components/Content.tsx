@@ -96,8 +96,11 @@ const styles = {
     '& a': {
       color: 'accent',
       textDecoration: 'underline',
-      '&:hover': {
-        color: 'accent2',
+
+      md: {
+        '&:hover': {
+          color: 'accent2',
+        },
       },
     },
   }),

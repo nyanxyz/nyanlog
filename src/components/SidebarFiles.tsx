@@ -113,9 +113,13 @@ const styles = {
       textAlign: 'left',
       position: 'relative',
       cursor: 'default',
-      '&:hover': {
-        bg: 'rgba(0, 0, 0, 0.075)',
-        color: 'base100',
+      outline: 'none',
+
+      md: {
+        '&:hover': {
+          bg: 'rgba(0, 0, 0, 0.075)',
+          color: 'base100',
+        },
       },
 
       '&[data-state="closed"] img': {
