@@ -1,7 +1,7 @@
 'use client';
 
-import dompurify from 'dompurify';
 import { css } from 'styled-system/css';
+import { sanitize } from 'isomorphic-dompurify';
 
 export function Content({
   post,
@@ -17,9 +17,7 @@ export function Content({
             <div className={styles.date}>- {post.data.Date}</div>
           )}
         </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: dompurify.sanitize(post.content) }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: sanitize(post.content) }} />
       </div>
     </div>
   );

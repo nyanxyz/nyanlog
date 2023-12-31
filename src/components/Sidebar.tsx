@@ -3,7 +3,6 @@ import fs from 'fs/promises';
 import matter from 'gray-matter';
 import { SidebarFiles } from '@/components/SidebarFiles';
 import { css } from 'styled-system/css';
-import * as Popover from '@radix-ui/react-popover';
 import { SidebarHeader } from '@/components/SidebarHeader';
 
 async function getPosts() {

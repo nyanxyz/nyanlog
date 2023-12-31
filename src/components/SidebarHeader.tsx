@@ -16,14 +16,12 @@ export function SidebarHeader({
   return (
     <Dialog.Root>
       <div className={styles.headerFallback} />
-      <Portal>
-        <div className={styles.header}>
-          <Dialog.Trigger className={styles.trigger}>
-            <img src={'/menu.svg'} alt={'menu'} width={24} height={24} />
-          </Dialog.Trigger>
-          <Link href={'/Home'}>nyanlog</Link>
-        </div>
-      </Portal>
+      <div className={styles.header}>
+        <Dialog.Trigger className={styles.trigger}>
+          <img src={'/menu.svg'} alt={'menu'} width={24} height={24} />
+        </Dialog.Trigger>
+        <Link href={'/Home'}>nyanlog</Link>
+      </div>
 
       <Dialog.Portal>
         <Dialog.Content className={styles.content}>

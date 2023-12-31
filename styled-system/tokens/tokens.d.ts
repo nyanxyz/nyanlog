@@ -15,7 +15,7 @@ export type BreakpointToken = "sm" | "md" | "lg" | "xl" | "2xl"
 
 export type SizeToken = "breakpoint-sm" | "breakpoint-md" | "breakpoint-lg" | "breakpoint-xl" | "breakpoint-2xl"
 
-export type AnimationName = "spin" | "ping" | "pulse" | "bounce" | "slideDown" | "slideUp"
+export type AnimationName = "spin" | "ping" | "pulse" | "bounce" | "slideDown" | "slideUp" | "slideIn"
 
 export type Tokens = {
 		colors: ColorToken
