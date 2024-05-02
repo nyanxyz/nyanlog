@@ -15,7 +15,7 @@ export function SidebarFiles({
     <div className={styles.sidebar}>
       <div className={styles.header}>nyanlog</div>
 
-      <Link href="/Home" className={styles.file({ active: postId === 'Home' })}>
+      <Link href="/" className={styles.file({ active: postId === 'Home' })}>
         Home
       </Link>
       {folders.map(({ folder, posts }) => (
