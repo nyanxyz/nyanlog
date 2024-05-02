@@ -19,7 +19,11 @@ export function SidebarFiles({
         Home
       </Link>
       {folders.map(({ folder, posts }) => (
-        <Collapsible.Root key={folder} className={styles.root} open={true}>
+        <Collapsible.Root
+          key={folder}
+          className={styles.root}
+          defaultOpen={true}
+        >
           <Collapsible.Trigger className={styles.file({ active: false })}>
             <img
               src="/arrow.svg"
@@ -65,7 +69,7 @@ const styles = {
   }),
   header: css({
     p: '4px 8px 4px 24px',
-    fontSize: 'uiSmall',
+    fontSize: '14px',
     color: 'base100',
     fontWeight: 'bold',
   }),
@@ -103,13 +107,14 @@ const styles = {
     base: {
       w: '100%',
       p: '4px 8px 4px 24px',
-      fontSize: 'uiSmall',
+      fontSize: '14px',
       fontWeight: 'normal',
       rounded: '4px',
       textAlign: 'left',
       position: 'relative',
       cursor: 'default',
       outline: 'none',
+      transition: 'background-color 0.1s',
 
       md: {
         '&:hover': {
@@ -128,6 +133,7 @@ const styles = {
         true: {
           bg: 'rgba(0, 0, 0, 0.075)',
           color: 'base100',
+          fontWeight: 'medium',
         },
         false: {
           color: 'base70',
@@ -138,7 +144,7 @@ const styles = {
           pl: 24,
         },
         1: {
-          pl: 41,
+          pl: 40,
         },
       },
     },
