@@ -69,7 +69,7 @@ const styles = {
   }),
   header: css({
     p: '4px 8px 4px 24px',
-    fontSize: '14px',
+    fontSize: '15px',
     color: 'base100',
     fontWeight: 'bold',
   }),
