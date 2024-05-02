@@ -4,6 +4,8 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 import { Content } from '@/components/Content';
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const PATH = path.join(process.cwd(), 'src', 'md');
   let fileNames: string[] = [];
