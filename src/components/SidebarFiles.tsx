@@ -15,19 +15,15 @@ export function SidebarFiles({
     <div className={styles.sidebar}>
       <div className={styles.header}>nyanlog</div>
 
-      <Link
-        href={'/Home'}
-        className={styles.file({ active: postId === 'Home' })}
-      >
+      <Link href="/Home" className={styles.file({ active: postId === 'Home' })}>
         Home
       </Link>
       {folders.map(({ folder, posts }) => (
         <Collapsible.Root key={folder} className={styles.root} open={true}>
           <Collapsible.Trigger className={styles.file({ active: false })}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={'/arrow.svg'}
-              alt={''}
+              src="/arrow.svg"
+              alt=""
               width={10}
               height={10}
               className={styles.arrow}
@@ -71,7 +67,7 @@ const styles = {
     p: '4px 8px 4px 24px',
     fontSize: 'uiSmall',
     color: 'base100',
-    fontWeight: 'medium',
+    fontWeight: 'bold',
   }),
   arrow: css({
     position: 'absolute',

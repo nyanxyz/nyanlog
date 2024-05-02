@@ -3,7 +3,6 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import { css } from 'styled-system/css';
 import { SidebarFiles } from '@/components/SidebarFiles';
-import { Portal } from '@radix-ui/react-portal';
 import Link from 'next/link';
 
 export function SidebarHeader({
@@ -18,9 +17,9 @@ export function SidebarHeader({
       <div className={styles.headerFallback} />
       <div className={styles.header}>
         <Dialog.Trigger className={styles.trigger}>
-          <img src={'/menu.svg'} alt={'menu'} width={24} height={24} />
+          <img src="/menu.svg" alt="menu" width={24} height={24} />
         </Dialog.Trigger>
-        <Link href={'/Home'}>nyanlog</Link>
+        <Link href="/Home">nyanlog</Link>
       </div>
 
       <Dialog.Portal>
