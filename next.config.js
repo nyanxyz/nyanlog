@@ -2,7 +2,7 @@
 const nextConfig = {
   rewrites: async () => {
     return {
-      afterFiles: [
+      beforeFiles: [
         {
           source: '/',
           destination: '/Home',
