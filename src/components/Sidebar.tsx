@@ -74,7 +74,7 @@ const styles = {
       display: 'block',
       borderRight: '1px solid',
       borderColor: 'base30',
-      w: 280,
+      w: 250,
     },
   }),
 };
