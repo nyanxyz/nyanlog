@@ -1,3 +1,3 @@
 # NYANLOG
 
-https://nyan.work/Home
+https://nyan.work
